@@ -1,0 +1,130 @@
+/* Add all css styling here */
+/* Define a custom font called "myfont" */
+@font-face {
+  font-family: "myfont";
+  src: url("../font/Pacifico-Regular.ttf");
+}  
+@font-face {
+  font-family: "myfont_2";
+  src: url("../font/Reenie_Beanie/ReenieBeanie-Regular.ttf");
+}  
+@media (max-width: 600px){
+  .main{
+    width: 100%;
+  }
+}
+
+
+/* Setting for the body section */
+body{
+  background: url(../img/color.jpeg);  
+  background-position: center bottom;
+  background-size: cover;
+  height: 1000%;
+  width: auto;
+  background-repeat: no-repeat;
+}
+
+
+/* Setting for the header section */
+header {
+  width: 100%;
+  font-size: 2.0rem;
+  font-family: 'myfont';
+  color:rgb(254, 246, 179) ;
+  text-align: center;
+  letter-spacing: 0em;
+}
+
+/* When hover the header, change the color */
+header:hover {
+  color: rgb(238, 166, 241);
+}
+
+
+/* Setting for the Lyric section */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+/* Setting for the main section */
+.main {
+  background: #ae5248;
+  width: 100%;
+  padding: 1em;
+  font-kerning: auto;
+  font-variant: small-caps;
+}
+
+/* Scroll setting for the Lyric section */
+.main .scrollable {
+  scrollbar-color: rgb(213, 223, 101) lightblue;
+  height: 50vw;
+  width: auto;
+  overflow: auto;
+}
+
+/* Mask setting for the Lyric section */
+div span.mask h3 {
+  background: url(../img/cat.jpeg);  
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'myfont_2';
+  font-size: 1.7rem;
+  color: #fefafd;
+  text-shadow: 20px 10px 20px #ab2d06;
+  text-align: center;
+  height: 60vw;
+  width: auto;
+}
+
+/* Change the color "Loving you is poetry"*/
+div span.pink {
+  color: #ea61df;
+  font-size: 2.0rem;
+  background:#f2d2c2;
+}
+
+/* when hover the part of "Loving you is poetry", change the color */
+div span.pink:hover{
+  color: #4df048;
+  background:#e6f091;
+}
+
+
+/* Setting for the footer section */
+footer {
+  text-align: left;
+  padding: 3px;
+  font-size: small;
+  color:rgb(254, 246, 179) ;
+  text-decoration: underline dotted rgb(0, 255, 221);
+}
+
+/* Setting for the tooltip */
+.tooltip {
+  position: relative; 
+  cursor: pointer; 
+}
+/* Text for the tooltip */
+.tooltip-text {
+  opacity: 0; 
+  visibility: hidden;
+  position: absolute; 
+  display: inline-block;
+  padding: 5px;
+  font-size: 0.8rem; 
+  background: #599ebe;
+  color: #fff;
+  border-radius: 3px;
+  transition: 0.3s ease-in;
+}
+
+/* when hover tooltip-text visible */
+.tooltip:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
